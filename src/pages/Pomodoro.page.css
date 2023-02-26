@@ -1,0 +1,12 @@
+#container {
+    display: flex;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: left; /* center items horizontally, in this case */
+    align-items: top;     /* center items vertically, in this case */
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+
+}

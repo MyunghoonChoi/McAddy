@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Home from "./pages/Home.page";
+import Pomodoro from './pages/Pomodoro.page';
+import Schedule from './pages/Schedule.page';
+import Messenger from './pages/Messenger.page';
+import TodoPage from './pages/Todo.page';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Pomodoro' element = {<Pomodoro/>}/>
+        <Route path='/Schedule' element = {<Schedule/>}/>
+        <Route path='/Messenger' element = {<Messenger/>}/>
+        <Route path='/TodoPage' element = {<TodoPage/>}/>
+      </Routes>
+    </Router>
   );
 }
 

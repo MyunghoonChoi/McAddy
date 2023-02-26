@@ -1,0 +1,16 @@
+#NaviBar {
+    display: flex;
+    width: 70px;
+    height: 100vh;
+    background-color: #B6C0DB;
+
+    /* justify-content: center; */
+  }
+
+.NaviButton {
+    width: 36px;
+    height: 36px;
+    background-color: #B6C0DB;
+    border: none;
+   
+}
