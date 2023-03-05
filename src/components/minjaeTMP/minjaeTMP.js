@@ -1,1 +1,1 @@
-const minjase = "dumbass";
+const minjase = "sexy box";
