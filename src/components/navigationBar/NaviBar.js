@@ -1,21 +1,21 @@
-import MessengerButton from './MessengerButton';
-import './NaviBar.css';
-import PomoButton from './PomoButton';
-import ScheduleButton from './ScheduleButton';
-import TodoButton from './TodoButton';
+import MessengerButton from "./MessengerButton";
+import "./NaviBar.css";
+import PomoButton from "./PomoButton";
+import ScheduleButton from "./ScheduleButton";
+import TodoButton from "./TodoButton";
 
-function NaviBar()  {
+function NaviBar() {
+  return (
+    <div id="NaviBar">
+      <div>
+        <PomoButton />
+        <ScheduleButton />
+        <MessengerButton />
 
-    return (
-        <div id='NaviBar'>
-            <div>
-                <PomoButton />
-                <ScheduleButton />
-                <MessengerButton />
-                <TodoButton/>
-            </div>
-        </div>
-    );
+        <TodoButton />
+      </div>
+    </div>
+  );
 }
 
 export default NaviBar;
